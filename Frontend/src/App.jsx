@@ -1,35 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import data from "../data.json";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      //aqui esta el como se podria tulizar para crear el componente o la page de  las card 
+      {data.map((city) => (
+        <div>
+          <h1>{city.name}</h1>
+          <img src={city.images} alt="" />
+          <p>{city.description}</p>
+          <p>{city.location}</p>
+         <span>price per week: {city.precio}</span>
+         <span>{city.rating}</span>
+        </div>
+      ))}
+    </div>
+  );
 }
 
-export default App
+export default App;

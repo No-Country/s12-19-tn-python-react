@@ -1,0 +1,308 @@
+[
+  {
+    "id": "1",
+    "name": "Casa",
+    "description": "Hermosa casa en el centro de la ciudad",
+    "location": "Buenos Aires, Argentina",
+    "images": "https://picsum.photos/200/300?random=1",
+    "precio": "150",
+    "rating": "4.5"
+  },
+  {
+    "id": "2",
+    "name": "Apartamento",
+    "description": "Acogedor apartamento en zona residencial",
+    "location": "Santiago, Chile",
+    "images": "https://picsum.photos/200/300?random=2",
+    "precio": "100",
+    "rating": "4.2"
+  },
+  {
+    "id": "3",
+    "name": "Chalet",
+    "description": "Amplio chalet con vistas al mar",
+    "location": "Barcelona, España",
+    "images": "https://picsum.photos/200/300?random=3",
+    "precio": "200",
+    "rating": "4.8"
+  },
+  {
+    "id": "4",
+    "name": "Piso",
+    "description": "Moderno piso en el centro histórico",
+    "location": "Lisboa, Portugal",
+    "images": "https://picsum.photos/200/300?random=4",
+    "precio": "120",
+    "rating": "4.1"
+  },
+  {
+    "id": "5",
+    "name": "Cabaña",
+    "description": "Encantadora cabaña en medio del bosque",
+    "location": "Montevideo, Uruguay",
+    "images": "https://picsum.photos/200/300?random=5",
+    "precio": "180",
+    "rating": "4.6"
+  },
+  {
+    "id": "6",
+    "name": "Departamento",
+    "description": "Departamento con vista panorámica",
+    "location": "Quito, Ecuador",
+    "images": "https://picsum.photos/200/300?random=6",
+    "precio": "90",
+    "rating": "4.0"
+  },
+  {
+    "id": "7",
+    "name": "Villa",
+    "description": "Elegante villa con piscina privada",
+    "location": "Cancún, México",
+    "images": "https://picsum.photos/200/300?random=7",
+    "precio": "300",
+    "rating": "4.9"
+  },
+  {
+    "id": "8",
+    "name": "Loft",
+    "description": "Acogedor loft en el centro histórico",
+    "location": "Bogotá, Colombia",
+    "images": "https://picsum.photos/200/300?random=8",
+    "precio": "110",
+    "rating": "4.3"
+  },
+  {
+    "id": "9",
+    "name": "Habitación",
+    "description": "Cómoda habitación en casa compartida",
+    "location": "Lima, Perú",
+    "images": "https://picsum.photos/200/300?random=9",
+    "precio": "50",
+    "rating": "3.9"
+  },
+  {
+    "id": "10",
+    "name": "Casa de campo",
+    "description": "Tranquila casa de campo en las afueras",
+    "location": "Asunción, Paraguay",
+    "images": "https://picsum.photos/200/300?random=10",
+    "precio": "220",
+    "rating": "4.7"
+  },
+  {
+    "id": "11",
+    "name": "Apartaestudio",
+    "description": "Moderno apartaestudio en zona comercial",
+    "location": "Medellín, Colombia",
+    "images": "https://picsum.photos/200/300?random=11",
+    "precio": "80",
+    "rating": "4.0"
+  },
+  {
+    "id": "12",
+    "name": "Casa adosada",
+    "description": "Casa adosada con jardín privado",
+    "location": "Madrid, España",
+    "images": "https://picsum.photos/200/300?random=12",
+    "precio": "190",
+    "rating": "4.5"
+  },
+  {
+    "id": "13",
+    "name": "Departamento amoblado",
+    "description": "Departamento completamente amoblado",
+    "location": "Lima, Perú",
+    "images": "https://picsum.photos/200/300?random=13",
+    "precio": "130",
+    "rating": "4.3"
+  },
+  {
+    "id": "14",
+    "name": "Casa de playa",
+    "description": "Encantadora casa de playa frente al mar",
+    "location": "Río de Janeiro, Brasil",
+    "images": "https://picsum.photos/200/300?random=14",
+    "precio": "250",
+    "rating": "4.8"
+  },
+  {
+    "id": "15",
+    "name": "Apartamento céntrico",
+    "description": "Apartamento en el corazón de la ciudad",
+    "location": "Buenos Aires, Argentina",
+    "images": "https://picsum.photos/200/300?random=15",
+    "precio": "110",
+    "rating": "4.2"
+  },
+  {
+    "id": "16",
+    "name": "Vivienda compartida",
+    "description": "Habitación en vivienda compartida",
+    "location": "Santiago, Chile",
+    "images": "https://picsum.photos/200/300?random=16",
+    "precio": "60",
+    "rating": "3.8"
+  },
+  {
+    "id": "17",
+    "name": "Casa rural",
+    "description": "Casa rural con encanto en la montaña",
+    "location": "Barcelona, España",
+    "images": "https://picsum.photos/200/300?random=17",
+    "precio": "180",
+    "rating": "4.6"
+  },
+  {
+    "id": "18",
+    "name": "Piso moderno",
+    "description": "Piso moderno en zona residencial",
+    "location": "Lisboa, Portugal",
+    "images": "https://picsum.photos/200/300?random=18",
+    "precio": "100",
+    "rating": "4.0"
+  },
+  {
+    "id": "19",
+    "name": "Cabaña de montaña",
+    "description": "Cabaña acogedora en la montaña",
+    "location": "Montevideo, Uruguay",
+    "images": "https://picsum.photos/200/300?random=19",
+    "precio": "160",
+    "rating": "4.5"
+  },
+  {
+    "id": "20",
+    "name": "Departamento ejecutivo",
+    "description": "Departamento ejecutivo con todas las comodidades",
+    "location": "Quito, Ecuador",
+    "images": "https://picsum.photos/200/300?random=20",
+    "precio": "150",
+    "rating": "4.2"
+  },
+  {
+    "id": "21",
+    "name": "Villa de lujo",
+    "description": "Villa de lujo con vistas al mar",
+    "location": "Cancún, México",
+    "images": "https://picsum.photos/200/300?random=21",
+    "precio": "400",
+    "rating": "4.9"
+  },
+  {
+    "id": "22",
+    "name": "Loft en el centro",
+    "description": "Loft en pleno centro de la ciudad",
+    "location": "Bogotá, Colombia",
+    "images": "https://picsum.photos/200/300?random=22",
+    "precio": "130",
+    "rating": "4.3"
+  },
+  {
+    "id": "23",
+    "name": "Habitación privada",
+    "description": "Habitación privada en casa familiar",
+    "location": "Lima, Perú",
+    "images": "https://picsum.photos/200/300?random=23",
+    "precio": "70",
+    "rating": "3.9"
+  },
+  {
+    "id": "24",
+    "name": "Casa antigua",
+    "description": "Casa antigua con encanto en el casco histórico",
+    "location": "Asunción, Paraguay",
+    "images": "https://picsum.photos/200/300?random=24",
+    "precio": "200",
+    "rating": "4.6"
+  },
+  {
+    "id": "25",
+    "name": "Apartamento amueblado",
+    "description": "Apartamento amueblado en zona residencial",
+    "location": "Medellín, Colombia",
+    "images": "https://picsum.photos/200/300?random=25",
+    "precio": "90",
+    "rating": "4.1"
+  },
+  {
+    "id": "26",
+    "name": "Casa de diseño",
+    "description": "Casa de diseño con jardín y piscina",
+    "location": "Madrid, España",
+    "images": "https://picsum.photos/200/300?random=26",
+    "precio": "230",
+    "rating": "4.8"
+  },
+  {
+    "id": "27",
+    "name": "Departamento de lujo",
+    "description": "Departamento de lujo en el centro financiero",
+    "location": "Santiago, Chile",
+    "images": "https://picsum.photos/200/300?random=27",
+    "precio": "180",
+    "rating": "4.4"
+  },
+  {
+    "id": "28",
+    "name": "Casa de campo rústica",
+    "description": "Casa de campo rústica con vistas panorámicas",
+    "location": "Barcelona, España",
+    "images": "https://picsum.photos/200/300?random=28",
+    "precio": "210",
+    "rating": "4.7"
+  },
+  {
+    "id": "29",
+    "name": "Piso luminoso",
+    "description": "Piso luminoso en zona céntrica",
+    "location": "Lisboa, Portugal",
+    "images": "https://picsum.photos/200/300?random=29",
+    "precio": "120",
+    "rating": "4.2"
+  },
+  {
+    "id": "30",
+    "name": "Cabaña junto al lago",
+    "description": "Cabaña acogedora junto al lago",
+    "location": "Montevideo, Uruguay",
+    "images": "https://picsum.photos/200/300?random=30",
+    "precio": "190",
+    "rating": "4.6"
+  },
+  {
+    "id": "31",
+    "name": "Departamento con terraza",
+    "description": "Departamento con amplia terraza",
+    "location": "Quito, Ecuador",
+    "images": "https://picsum.photos/200/300?random=31",
+    "precio": "140",
+    "rating": "4.1"
+  },
+  {
+    "id": "32",
+    "name": "Villa frente al mar",
+    "description": "Villa de lujo frente al mar",
+    "location": "Cancún, México",
+    "images": "https://picsum.photos/200/300?random=32",
+    "precio": "450",
+    "rating": "4.9"
+  },
+  {
+    "id": "33",
+    "name": "Loft en zona bohemia",
+    "description": "Loft en zona bohemia de la ciudad",
+    "location": "Bogotá, Colombia",
+    "images": "https://picsum.photos/200/300?random=33",
+    "precio": "150",
+    "rating": "4.4"
+  },
+  {
+    "id": "34",
+    "name": "Habitación en apartamento",
+    "description": "Habitación en apartamento compartido",
+    "location": "Lima, Perú",
+    "images": "https://picsum.photos/200/300?random=34",
+    "precio": "80",
+    "rating": "4.0"
+  }
+]
