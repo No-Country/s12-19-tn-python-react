@@ -13,15 +13,15 @@ const Home = () => {
     return (
         <main>
             <div className="input-container">
-                <img src="/src/assets/home/Group-icon.png" alt="Destino" id='icon-group'/>
+                <img src="/src/assets/home/Group-icon.png" alt="Destino" id='icon-group' />
                 <input type="text" id="text-destiny" name="text" placeholder='Destino' />
             </div>
             <div className="input-container">
-                <img src="/src/assets/home/calendar-icon.png" alt="Check-in / salida" id='calendar-icon'/>
+                <img src="/src/assets/home/calendar-icon.png" alt="Check-in / salida" id='calendar-icon' />
                 <input type="date" id="check-in" name="check-in" placeholder='Check-in / salida' />
             </div>
             <div className="input-container">
-                <img src="/src/assets/home/user-icon.png" alt="Adultos" id='user-icon'/>
+                <img src="/src/assets/home/user-icon.png" alt="Adultos" id='user-icon' />
                 <input
                     type="number"
                     id="adults"
@@ -32,14 +32,12 @@ const Home = () => {
                 />
             </div>
             <div className="input-container">
-                <img src="/src/assets/home/home-icon.png" alt="Tipo de propiedad" id='property'/>
-                <label htmlFor="property-type">Tipo de propiedad</label>
-                <select id="property-type" name="property-type">
-                    <option value="apartment">Apartamento</option>
-                    <option value="house">Casa</option>
-                </select>
+                <img src="/src/assets/home/home-icon.png" alt="Tipo de propiedad" id='property' />
+                <input type="text" id="text-property" name="text" placeholder='Tipo de propiedad' />
             </div>
-            <button type="button" id="search-button">Buscar</button>
+            <div className="button-container">
+                <button type="button" id="search-button">Buscar</button>
+            </div>
         </main>
     );
 };

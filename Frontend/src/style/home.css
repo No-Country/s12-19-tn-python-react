@@ -11,43 +11,59 @@ main {
     align-items: center;
     padding: 20px;
     margin-top: 70px;
-    margin-left: 700px;
+    margin-left: 300px;
     margin-right: 10px;
     max-width: 1200px;
-    width: 100%;
+    width: 80%;
 }
 
 .input-container {
     display: flex;
     align-items: center;
-    margin-right: 10px; /* Agregado un margen derecho para separar los elementos */
+    margin-right: 60px;
+    background-color: white;
+    border-right: 1px solid #ccc;
 }
+
 
 input,
 select {
     padding: 8px;
     margin-left: 5px;
-    border: 1px solid black;
     background: transparent;
     color: black;
+    border: none;
+    text-align: center;
 }
-
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
 img {
     width: 24px;
-    margin-right: 5px; /* Reducido el margen derecho para ajustar la separación */
+    margin-right: 5px;
 }
 
 button {
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #5E625F;
     color: white;
     border: none;
     cursor: pointer;
+    flex-grow: 1;
 }
 
-/* Estilo adicional para el contenedor principal */
+button-container {
+    display: flex;
+    align-items: center;
+    background-color: #5E625F;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+}
+
 main {
-    background-color: white;
+    background-color: white; /* Cambiado a blanco */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
