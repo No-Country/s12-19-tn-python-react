@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/src/assets/home/wallpaper.jpg') center/cover no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 70px;
+    margin-left: 700px;
+    margin-right: 10px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Agregado un margen derecho para separar los elementos */
+}
+
+input,
+select {
+    padding: 8px;
+    margin-left: 5px;
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+
+img {
+    width: 24px;
+    margin-right: 5px; /* Reducido el margen derecho para ajustar la separación */
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo adicional para el contenedor principal */
+main {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
