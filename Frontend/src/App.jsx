@@ -1,18 +1,20 @@
 import { Routes, Route } from "react-router-dom";
 import Nabvar from "./components/Navbar"
-import Home from "./Pages/Home"
+import Home from "./pages/Home"
+import Carrousel from "./components/Carousel"
 import "./App.css";
-import Home from "./pages/Home";
+
 
 
 function App() {
   return (
-    <div>
+    <>
        <Nabvar/>
        <Routes>
        <Route  path="/" element={<Home/>} />
        </Routes>
-    </div>
+       
+    </>
   );
 }
 
