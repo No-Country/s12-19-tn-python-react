@@ -3,6 +3,7 @@ import Nabvar from "./components/Navbar"
 import Home from "./pages/Inicio"
 
 import "./App.css";
+import Form from "./Pages/Register/Form";
 
 
 
