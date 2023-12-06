@@ -14,10 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="new-propertie" element={<NewPorpertie/>} />
-      </Routes>
-      <Routes>
         <Route path="register" element={<Form/>} />
       </Routes>
+      
     </>
   );
 }
