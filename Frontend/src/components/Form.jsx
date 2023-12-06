@@ -45,12 +45,12 @@ const Form = () => {
 return (
   <>
     <div>
-      <h1 className="">Registro</h1>
+      <h1 className="body">Registro</h1>
 
       {msg && <Alert alert={alert}/>}
 
       <form 
-      className=""
+      className="form"
       onSubmit={handleSubmit}
       >
         <div className="">
