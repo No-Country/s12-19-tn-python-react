@@ -1,9 +1,11 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import axiosClient from './../../config/axiosClient';
-import Alert from "../../components/Alert";
-
+import Alert from "./Alert";
+import "../style/Form.css"
 const Form = () => {
+
+
+  
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')

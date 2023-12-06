@@ -4,6 +4,7 @@ import "./App.css";
 import Inicio from "./pages/Inicio";
 import Navbar from "./components/Navbar";
 import NewPorpertie from "./Pages/NewPropertie";
+import Form from "./components/Form";
 
 
 
