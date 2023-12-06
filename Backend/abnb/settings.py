@@ -33,7 +33,8 @@ INSTALLED_APPS = [
     'usuario',
     'propriedad',
     'reserva',
-    'comentarios'
+    'comentarios',
+    'servicios',
 
 ]
 
