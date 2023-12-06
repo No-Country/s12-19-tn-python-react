@@ -1,5 +1,6 @@
 import React from 'react';
-import "../style/Nabvar.css";
+import "../style/Navbar.css";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -9,11 +10,12 @@ const Navbar = () => {
           Logotipo
         </span>
         <ul className="navbar__menu">
-          <li className="navbar__item">{"usd($)"}</li>
-          <li className="navbar__item">Espanol</li>
-          <li className="navbar__item">Ingresa tu Propiedad</li>
-          <li className="navbar__item">Inicia sesion</li>
-          <li className="navbar__item">Registrate</li>
+          <Link className="navbar__item">{"usd($)"}</Link>
+          <Link className="navbar__item">Espanol</Link>
+          <Link className="navbar__item" to={'new-propertie'}>Ingresa tu Propiedad</Link>
+          <Link className="navbar__item">Inicia sesion</Link>
+          <Link className="navbar__item" to={'register'}>Registrate </Link>
+          
         </ul>
       </nav>
     </header>

@@ -1,7 +1,6 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
-import axiosClient from './../../config/axiosClient';
 import Alert from "../../components/Alert";
+import "../../style/Form.css"
 
 const Form = () => {
   const [firstName, setFirstName] = useState('')
@@ -43,72 +42,64 @@ const Form = () => {
 
 return (
   <>
-    <div>
-      <h1 className="">Registro</h1>
-
+    <div className="body">
       {msg && <Alert alert={alert}/>}
 
       <form 
-      className=""
+      className="form"
       onSubmit={handleSubmit}
       >
-        <div className="">
-          <label className=""
-            >Nombre</label>
-
+        <h1 className="title">Registro</h1>
+        <div className="head_log">
+          <label>Nombre</label>
           <input
             type="text"
             placeholder="Ingrese su nombre"
-            className=""
+            className="place_holder"
             value={firstName}
             onChange={e=>setFirstName(e.target.value)}
           />
         </div>
-        <div className="">
-          <label className=""
-            >Apellido</label>
 
+        <div className="head_log">
+          <label>Apellido</label>
           <input
             type="text"
             placeholder="Ingrese su apellido"
-            className=""
+            className="place_holder"
             value={lastName}
             onChange={e=>setLastName(e.target.value)}
           />
         </div> 
-        
-        <div className="">
-          <label className=""
-            >Email</label>
 
+        <div className="head_log">
+          <label>Email</label>
           <input
             type="email"
             placeholder="Ingrese su Correo"
-            className=""
+            className="place_holder"
           value={email}
           onChange={e=>setEmail(e.target.value)}
           />
         </div>
 
-        <div className="">
-          <label className=""
-            >Contraseña</label>
+        <div className="head_log">
+          <label>Contraseña</label>
           <input
             type="password"
             placeholder="Ingrese su contraseña"
-            className=""
+            className="place_holder"
             value={password}
             onChange={e=>setPasword(e.target.value)}
           />
         </div>
 
-        <div className="">
-          <label className=""
-            >Confirmar Contraseña</label>
+        <div className="head_log">
+          <label>Confirmar Contraseña</label>
           <input
             type="password"
             placeholder="Ingrese nuevamente su contraseña"
-            className=""
+            className="place_holder"
             value={repeatPassword}
             onChange={e=>setRepeatPassword(e.target.value)}
           />
@@ -117,7 +108,7 @@ return (
         <input
           type="submit"
           value={'Crear Cuenta'}
-          className=""
+          className="button"
         />        
       </form>
       </div>
