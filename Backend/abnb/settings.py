@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'comentarios',
     'drf_yasg',
     'rest_framework_simplejwt'
+    'servicios',
 
 ]
 
