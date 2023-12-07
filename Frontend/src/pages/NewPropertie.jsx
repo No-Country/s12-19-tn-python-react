@@ -10,7 +10,7 @@ const NewPropertie = () => {
     const [address, setAddress] = useState('')
     const [addedPhotos, setAddedPhotos] = useState([])
     const [description, setDescription] = useState('')
-    const [services, setServices] = useState('')
+    const [services, setServices] = useState([])
     const [extraInfo, setExtraInfo] = useState('')
     const [checkIn, setCheckIn] = useState('')
     const [checkOut, setCheckOut] = useState('')
