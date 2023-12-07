@@ -3,6 +3,6 @@ from comentarios.models import Comentario
 
 # Create your views here.
 def Comentarios(request):
-    listaComentarios = Comentario.objects.all()
+    listaComentarios = Comentario.object.all()
     context = {"comentarios":listaComentarios}
     return render (request,context)
