@@ -1,45 +1,35 @@
-import React, { useState } from "react";
 import "../style/Inicio.css";
 import DateFilters from "./componentsSimpleFilter/Dates";
-import Destination from "../components/componentsSimpleFilter/Destination"
-
-
+import Destination from "../components/componentsSimpleFilter/Destination";
+import Properties from "./componentsSimpleFilter/Properties";
+import ImputNumber from "./componentsSimpleFilter/ImputNumber";
+import useSimpleFilterState from "../store/SimpleFilterStore";
+import { useNavigate } from "react-router-dom";
 
 const Inicio = () => {
-
+  const { dates, destination, numberOfPersons, property, resetState } = useSimpleFilterState();
+   const navigate = useNavigate()
+  const handleClick = () => {
+    console.log('Información seleccionada:', { dates, destination, numberOfPersons, property });
+    navigate("/propiedad")
+    resetState()
+  };
 
   return (
-    <form className="home__form" action="">
-     <Destination/>
+    <div className="home__form" >
+      <Destination />
+      <DateFilters />
+      <ImputNumber />
+      <Properties />
 
-     <DateFilters/>
-
-      <input
-        className="home__input--numberofperson"
-        placeholder="numero de personas"
-        type="number"
-        name="numberOfPersons"
-      
-      />
-
-      <select
-        className="home__select--propiedad"
-        name="tipoDeCasa"
-        id=""
-     
+      <button
+        onClick={handleClick}
+        className="home__button--search"
+        type="submit"
       >
-        <option value="" disabled selected hidden>
-          Tipo de casa
-        </option>
-        <option value="Grande">Grande</option>
-        <option value="Pequena">Pequeña</option>
-        <option value="Cavana">Cabaña</option>
-      </select>
-
-      <button className="home__button--search" type="submit">
         Buscar
       </button>
-    </form>
+    </div>
   );
 };
 
