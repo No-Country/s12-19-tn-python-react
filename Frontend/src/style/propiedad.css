@@ -1,0 +1,16 @@
+.propiedad{
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.propiedad__filtros{
+    width: 100%;
+    height: 52px;
+    background-color: red;
+}
