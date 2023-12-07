@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+   
 }
 
 .navbar__container {
@@ -24,6 +25,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-decoration: none;
 }
 
 .navbar__menu {
