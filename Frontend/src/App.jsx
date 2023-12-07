@@ -3,6 +3,7 @@ import Nabvar from "./components/Navbar"
 import Home from "./pages/Inicio"
 
 import "./App.css";
+import Properties from "./components/Properties";
 
 
 
@@ -13,6 +14,7 @@ function App() {
        <Nabvar/>
        <Routes>
        <Route  path="/" element={<Home/>} />
+       <Route  path="/properties" element={<Properties/>} />
        </Routes>
        
     </>
