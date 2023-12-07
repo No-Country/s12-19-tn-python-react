@@ -3,6 +3,8 @@ import "../style/Inicio.css";
 import Carrousel from "../components/Carousel";
 
 const Inicio = () => {
+
+  
   const [formData, setFormData] = useState({
     destination: "",
     salida: "",

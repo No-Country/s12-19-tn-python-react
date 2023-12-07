@@ -1,0 +1,66 @@
+
+.container {
+    position: relative;
+    width: 1067px;
+    height: 201px;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  
+  .elementsContainer {
+    width: 252px;
+    height: 222px;
+  }
+  
+  .imgHeartContainer {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heart {
+    position: absolute;
+    z-index: 1;
+    
+    width: 18.76px;
+height: 16.68px;
+top: 4.15px;
+right: 3.11px;
+
+
+  }
+  
+  .price {
+   
+  }
+  
+  .locHeartContainer {
+    display: flex;
+    width: 252px;
+    height: 30px;
+    font-size: 13px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .image {
+    height: 165px;
+    width: 252px;
+
+  }
+  
+  .rateStarContainer {
+    display: flex;
+  }
+  
+ 
+
+  .star {
+    width: 18px;
+    height: 18px;
+    margin-left: 1px;
+  }

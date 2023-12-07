@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Form from "./Pages/Register/Form";
+import Properties from "./components/Properties";
+
 import Inicio from "./pages/Inicio";
 import Navbar from "./components/Navbar";
 import NewPorpertie from "./Pages/NewPropertie";
@@ -9,15 +10,13 @@ import NewPorpertie from "./Pages/NewPropertie";
 
 function App() {
   return (
-    <>      
-    <Navbar />
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="new-propertie" element={<NewPorpertie/>} />
-      </Routes>
-      <Routes>
-        <Route path="register" element={<Form/>} />
-      </Routes>
+    <>
+       <Nabvar/>
+       <Routes>
+       <Route  path="/" element={<Home/>} />
+       <Route  path="/properties" element={<Properties/>} />
+       </Routes>
+       
     </>
   );
 }
