@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'reserva',
     'comentarios',
     'drf_yasg',
-    'rest_framework_simplejwt'
+    'rest_framework_simplejwt',
     'servicios',
 
 ]
