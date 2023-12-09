@@ -10,13 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^5.12.1",
+    "axios": "^1.6.2",
+    "firebase": "^10.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-id-swiper": "^4.0.0",
     "react-router-dom": "^6.20.0",
     "swiper": "^11.0.5",
     "uuid": "^9.0.1",
-  
     "zustand": "^4.4.7"
   },
   "devDependencies": {
