@@ -1,7 +1,7 @@
 from pyexpat import model
 from django.db import models
 from reserva.models import Reserva
-from propriedad.models import Propriedad
+from propiedad.models import Propiedad
 
 # Create your models here.
 class Usuario(models.Model):
@@ -13,7 +13,7 @@ class Usuario(models.Model):
 
 class Anfitrion(models.Model):
     usuario = models.OneToOneField(Usuario, on_delete=models.CASCADE)
-#    propriedades_administradas = models.ManyToManyField('Propriedad',blank=True)
+#    propiedades_administradas = models.ManyToManyField('Propiedad',blank=True)
     avaliacao_anfitriao = models.FloatField(default=0.0)
 
     def __str__(self):
