@@ -1,12 +1,12 @@
 from django.db import models
 from django.forms import CharField
-from usuario.models import Anfitrion, Huesped
+from django.contrib.auth.models import User
+from propiedad.models import Propiedad
 
 # Create your models here.
-class Comentario(models.model):
-    id_anfitrion = models.ForeignKey("usuario.Anfitrion", on_delete=models.CASCADE)    
-    id_huesped = models.ForeignKey("usuario.Huesped", on_delete=models.CASCADE)    
-    id_propiedad = models.ForeignKey("propiedad.Propiedad", on_delete=models.CASCADE)
+class Comentario(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    propiedad = models.ForeignKey(Propiedad, on_delete=models.CASCADE)
     calificacion = models.IntegerField()
-    Comentario = models.CharField(_max_length=500)
-    
+    comentario = models.CharField(max_length=500)
+    fecha_creacion = models.DateTimeField(auto_now_add=True)

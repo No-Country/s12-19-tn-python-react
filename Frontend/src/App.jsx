@@ -3,7 +3,7 @@ import "./App.css";
 import Propiedad from "./pages/Popiedad"
 import Inicio from "./pages/Inicio";
 import Navbar from "./components/Navbar";
-import NewPorpertie from "./Pages/NewPropertie";
+import NewPorpertie from "./pages/NewPropertie"
 import Form from "./components/Form";
 
 
