@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Propiedad (models.Model):
     nombre = models.CharField(max_length=255,null=True)
-    descricion = models.TextField(null=True,blank=True)
+    descripcion = models.TextField(null=True,blank=True)
     extra_info  = models.TextField(null=True,blank=True)
     ubicacion = models.CharField(max_length=255,null=True)
     numero_banos = models.IntegerField(default=1)
