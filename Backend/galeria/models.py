@@ -6,4 +6,4 @@ from propiedad.models import Propiedad
 class Galeria(models.Model):
     propiedad = models.ForeignKey(Propiedad, on_delete=models.CASCADE)
     imagen = models.ImageField(upload_to='imagenes')
-    descricion = models.CharField(max_length=255)
+    descripcion = models.CharField(max_length=255)
