@@ -32,6 +32,10 @@ class PerfilViewSet(viewsets.ModelViewSet):
         user_data = data.get('user',{})
         role = data.get('role')
 
+        document_id = data.get('document_id')
+        if Perfil.objects.filter(document_id=document_id).exists():
+            return Response({'detail': 'Este documento ya está en uso.'}, status=status.HTTP_400_BAD_REQUEST)
+
         user = User.objects.create(
             username= user_data.get('username'),
             email= user_data.get('email'),

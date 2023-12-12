@@ -8,9 +8,13 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = ['username','email','first_name','last_name']
 
+    def create(self, validated_data):
+        user = User.objects.create_user(**validated_data)
+        return user
+
 class PerfilSerializer(serializers.ModelSerializer):
 
-    user = serializers.SerializerMethodField()
+    user = UserSerializer()
 
     class Meta:
         model = Perfil
@@ -29,3 +33,8 @@ class PerfilSerializer(serializers.ModelSerializer):
             'first_name': user.first_name,
             'last_name': user.last_name,
         }
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation['user'] = UserSerializer(instance.user).data
+        return representation
