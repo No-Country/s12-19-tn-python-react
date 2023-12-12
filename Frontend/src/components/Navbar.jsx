@@ -13,7 +13,7 @@ const Navbar = () => {
           <Link className="navbar__item">{"usd($)"}</Link>
           <Link className="navbar__item">Espanol</Link>
           <Link className="navbar__item" to={'new-propertie'}>Ingresa tu Propiedad</Link>
-          <Link className="navbar__item">Inicia sesion</Link>
+          <Link className="navbar__item" to={'login'}>Inicia sesion</Link>
           <Link className="navbar__item" to={'register'}>Registrate </Link>
           
         </ul>
