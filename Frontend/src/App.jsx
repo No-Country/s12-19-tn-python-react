@@ -28,7 +28,7 @@ function App() {
 
         <Route path="new-propertie" element={<NewPorpertie/>} />
         <Route path="register" element={<Form/>} />
-      </Routes>
+   
       
     </>
   );
