@@ -3,7 +3,7 @@ import { Select } from "antd";
 import useSimpleFilterState from "../../store/SimpleFilterStore";
 
   const Destination = () => {
-    const { setDestination } = useSimpleFilterState();
+    const { setDestination, destination } = useSimpleFilterState();
     const cities = [
       { value: "paris", label: "París" },
       { value: "new-york", label: "Nueva York" },
@@ -15,6 +15,7 @@ import useSimpleFilterState from "../../store/SimpleFilterStore";
       <Select
         className="home__select--destino"
         placeholder="Selecciona una ciudad"
+        bordered={false}
         style={{
           width: 200,
         }}

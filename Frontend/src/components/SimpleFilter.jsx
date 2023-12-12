@@ -7,10 +7,9 @@ import useSimpleFilterState from "../store/SimpleFilterStore";
 import { useNavigate } from "react-router-dom";
 
 const Inicio = () => {
-  const { dates, destination, numberOfPersons, property, resetState } = useSimpleFilterState();
+  const {resetState } = useSimpleFilterState();
    const navigate = useNavigate()
   const handleClick = () => {
-    console.log('Información seleccionada:', { dates, destination, numberOfPersons, property });
     navigate("/propiedad")
     resetState()
   };

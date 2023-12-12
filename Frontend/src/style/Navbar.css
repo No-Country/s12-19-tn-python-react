@@ -1,7 +1,7 @@
 .navbar {
   width: 1370px;
   height: 64px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   display: flex;
   align-items: center;
   justify-content: center;

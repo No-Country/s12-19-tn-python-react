@@ -7,10 +7,13 @@ const DateComponent = () => {
   const { setDates } = useSimpleFilterState();
 
   const [date, setDate] = useState([]);
+  
   useEffect(() => {
-   
-    // Actualiza el estado global con las fechas seleccionadas
-    setDates(date.map(date => date ? date.format('YYYY-MM-DD') : null));
+    if (date) {
+      setDates(date.map(date => date ? date.format('YYYY-MM-DD') : null));
+    } else {
+      setDates(null);
+    }
   }, [date, setDates])
 
   const [value, setValue] = useState(null);
@@ -20,6 +23,7 @@ const DateComponent = () => {
       const tooEarly = date[1] && date[1].diff(current, "days") >= 1000;
       return !!tooEarly || !!tooLate;
     }
+  
     return false;
   };
 
@@ -29,6 +33,8 @@ const DateComponent = () => {
       setDate([null, null]);
     }
   };
+
+  
 
   return (
     <RangePicker

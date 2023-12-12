@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react'
-import '../style/NewPropertie.css'
 import { Navigate, useParams } from 'react-router-dom'
 import Services from '../components/Services'
 import axiosClient from '../config/axiosClient'
+import Uploader from './../components/Uploader';
+import TextArea from 'antd/es/input/TextArea';
+import { Button, Form, Input, InputNumber } from 'antd';
 
 const NewPropertie = () => {
-    const{id}=useParams()
+    const { id } = useParams()
     const [title, setTitle] = useState('')
     const [address, setAddress] = useState('')
     const [addedPhotos, setAddedPhotos] = useState([])
     const [description, setDescription] = useState('')
-    const [services, setServices] = useState('')
+    const [services, setServices] = useState([])
     const [extraInfo, setExtraInfo] = useState('')
     const [checkIn, setCheckIn] = useState('')
     const [checkOut, setCheckOut] = useState('')
@@ -18,7 +20,11 @@ const NewPropertie = () => {
     const [rooms, setRooms] = useState(1)
     const [bathRooms, setBathRooms] = useState(1)
     const [price, setPrice] = useState(100)
-    const [redirect,setRedirect] = useState(false)
+    const [redirect, setRedirect] = useState(false)
+
+    const handleUploadedPhotos = (newPhotos) => {
+        setAddedPhotos(newPhotos);
+    };
 
     useEffect(() => {
         if (!id) {
@@ -44,12 +50,12 @@ const NewPropertie = () => {
 
     function inputHeader(text) {
         return (
-            <h2 className=''>{text}</h2>
+            <h2 >{text}</h2>
         )
     }
     function inputDescription(text) {
         return (
-            <p className=''>{text}</p>
+            <p >{text}</p>
         )
     }
     function preInput(header, description) {
@@ -85,80 +91,99 @@ const NewPropertie = () => {
         return <Navigate to={'/account/places'} />
     }
 
+    const [size, setSize] = useState('large');
+
+
+
     return (
         <div>
-            <form onSubmit={savePlace}>
+            <Form onSubmit={savePlace}>
                 {preInput('Titulo', 'titulo que describa el lugar')}
-                <input type="text" placeholder='Por ej: Casa de campo'
-                    value={title} onChange={e => setTitle(e.target.value)} />
+                <Form.Item>
+                    <Input type="text" placeholder='Ej: Casa de campo' value={title} onChange={e => setTitle(e.target.value)} />
+                </Form.Item>
 
                 {preInput('Dirección', 'la ubicacion del lugar')}
-                <input type="text" placeholder='Ubicación'
-                    value={address} onChange={e => setAddress(e.target.value)} />
+                <Form.Item>
+                    <Input type="text" placeholder='Ubicación' value={address} onChange={e => setAddress(e.target.value)} />
+                </Form.Item>
 
-                {preInput('Fotos', 'Mientras mas fotos mejor')}
-                <div>
-                <input type="text" placeholder='Inserte URL de la imagen...jpg' />
-                <button>Añadir</button>
-                </div>
-
+                <Form.Item>
+                    {preInput('Fotos', 'Mientras mas fotos mejor')}
+                    <Uploader onSaveUploadedFiles={handleUploadedPhotos} /></Form.Item>
                 {preInput('Descripción', 'descripcion del lugar')}
-                <textarea name="" id="" cols="30" rows="10"
-                    value={description} onChange={e => setDescription(e.target.value)}></textarea>
+                <TextArea name="" rows={4}
+                    value={description} onChange={e => setDescription(e.target.value)}></TextArea>
 
-                {preInput('Servicios y accesibilidad', 'servicios y facilidades que se ofrecen')}
-                <div>
-                    <Services selected={services} onChange={setServices} />
-                </div>
-
-                {preInput('Información Extra', 'Reglas de convivencia, etc...')}
-                <textarea name="" id="" cols="30" rows="10"
-                    value={extraInfo} onChange={e => setExtraInfo(e.target.value)}></textarea>
-                {preInput('Horarios de Check in&out', 'agregue horarios de entrada y salida')}
-                <div className=''>
+                <Form.Item>
+                    {preInput('Servicios y accesibilidad', 'servicios y facilidades que se ofrecen')}
                     <div>
-                        <h3 className=''>Horario de check-in</h3>
-                        <input type="text"
+                        <Services selected={services} onChange={setServices} />
+                    </div>
+                </Form.Item>
+
+                <Form.Item>
+                    {preInput('Información Extra', 'Reglas de convivencia, etc...')}
+
+                    <TextArea name="" rows={4}
+                        value={extraInfo} onChange={e => setExtraInfo(e.target.value)}></TextArea>
+                </Form.Item>
+
+
+                <Form.Item>
+                    {preInput('Horarios de Check in&out', 'agregue horarios de entrada y salida')}
+                    <div>
+                        <h3 >Horario de check-in</h3>
+                        <Input type="text"
                             placeholder='8:00'
                             value={checkIn}
                             onChange={e => setCheckIn(e.target.value)} />
                     </div>
-                    <div>
-                        <h3 className=''>Horario de check-out</h3>
-                        <input type="text"
-                            placeholder='19:30'
-                            value={checkOut}
-                            onChange={e => setCheckOut(e.target.value)} />
-                    </div>
-                    <div>
-                        <h3 className=''>Número máximo de huéspedes</h3>
-                        <input type="text" placeholder='2'
-                            value={maxGuests}
-                            onChange={e => setMaxGuests(e.target.value)} />
-                    </div>
-                    <div>
-                        <h3 className=''>cantidad de habitaciónes</h3>
-                        <input type="text"
-                            placeholder='2'
-                            value={rooms}
-                            onChange={e => setRooms(e.target.value)} />
-                    </div>
-                    <div>
-                        <h3 className=''>cantidad de baños</h3>
-                        <input type="text"
-                            placeholder='1'
-                            value={bathRooms}
-                            onChange={e => setBathRooms(e.target.value)} />
-                    </div>
-                    <div>
-                        <h3 className="">Precio por noche</h3>
-                        <input type=""
-                            value={price}
-                            onChange={e => setPrice(e.target.value)} />
-                    </div>
+                </Form.Item>
+                <div>
+                    <h3 >Horario de check-out</h3>
+                    <Input type="text"
+                        placeholder='19:30'
+                        value={checkOut}
+                        onChange={e => setCheckOut(e.target.value)} />
                 </div>
-                <button className=''>Guardar</button>
-            </form>
+                <div>
+                    <h3 >Número máximo de huéspedes</h3>
+                    <InputNumber type="number" placeholder='1'
+                        value={maxGuests}
+                        onChange={value => setMaxGuests(value)} />
+                </div>
+                <Form.Item>
+                    <div>
+                        <h3 >cantidad de habitaciónes</h3>
+                        <InputNumber
+                            placeholder='1'
+                            value={rooms}
+                            onChange={value => setRooms(value)} />
+                    </div>
+                </Form.Item>
+                <div>
+                    <h3>cantidad de baños</h3>
+                    <InputNumber
+                        placeholder='1'
+                        value={bathRooms}
+                        onChange={value => setBathRooms(value)} />
+                </div>
+                <div>
+                    <h3>Precio por noche</h3>
+                    <InputNumber
+                        value={price}
+                        formatter={(value) => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+                        parser={(value) => value.replace(/\$\s?|(,*)/g, '')}
+                        onChange={value => setPrice(value)} />
+                </div>
+                <br />
+                <Button type="default" size={size} htmlType="submit">
+                    Guardar
+                </Button>
+                <br />
+                <br />
+            </Form>
 
         </div>
     )
