@@ -12,9 +12,7 @@ const Navbar = () => {
     <header className="navbar">
       <nav className="navbar__container">
         <Link  className="navbar__logo" to={"/"}>
-        <span >
-          Logotipo
-        </span>
+        <img src="./src/assets/logotipo.svg" alt="" />
         </Link>
         <ul className="navbar__menu">
           <Link className="navbar__item">{"usd($)"}</Link>

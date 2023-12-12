@@ -1,5 +1,5 @@
 .container__form {
-  background-image: url("../assets/home/wallpaper.jpg");
+  background-image: url("./src/assets/backgroundHoma.png");
   width: 1370px;
   height: 350px;
   margin: 0 auto;
@@ -7,6 +7,8 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .home__form {
@@ -19,26 +21,21 @@
   justify-content: center;
   border-radius: 8px;
   gap: 5px;
-
 }
 
-
-
 .home__select--destino {
-text-align: center;
+  text-align: center;
   width: 184px;
   height: 49px;
- 
-  border-radius: 8px 0px 0px 8px;
-  
- 
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
- 
+  
 }
+
+
 
 .home__button--date {
   display: flex;
@@ -57,7 +54,6 @@ text-align: center;
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
-  
 }
 
 .home__input--date {
@@ -109,17 +105,15 @@ text-align: center;
   color: #999; /* Color del placeholder */
 }
 
-
 .home__select--propiedad {
   display: flex;
   width: 217px;
   height: 49px;
-  
+
   justify-content: center;
   align-items: center;
   gap: 10px;
- 
-  
+
   color: #000;
   font-family: Poppins;
   font-size: 14px;

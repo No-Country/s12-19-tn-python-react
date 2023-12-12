@@ -9,6 +9,6 @@ const useSimpleFilterState = create((set) => ({
   setDestination: (destination) => set({ destination }),
   setNumberOfPersons: (numberOfPersons) => set({ numberOfPersons }),
   setProperty: (property) => set({ property }),
-  resetState: () => set({ selectedCity: null, selectedPropertyType: null, numberOfPersons: 1, selectedDates: null }),
+  resetState: () => set({ selectedCity: null, selectedPropertyType: null, numberOfPersons: null, selectedDates: [] }),
 }));
 export default useSimpleFilterState;
