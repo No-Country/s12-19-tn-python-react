@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import ForgotPassword from './components/ForgotPassword';
 import NewPassword from "./components/NewPassword";
 import ConfirmAccount from "./components/ConfirmAccount";
+import Propiedad from "./pages/Popiedad"
 
 
 function App() {
@@ -25,10 +26,10 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path='/forgot-password/:token' element={<NewPassword/>}/>
         <Route path='/confirm/:token' element={<ConfirmAccount/>}/>
-      </Routes>
-
         <Route path="new-propertie" element={<NewPorpertie/>} />
         <Route path="register" element={<Form/>} />
+      </Routes>
+
    
       
     </>
