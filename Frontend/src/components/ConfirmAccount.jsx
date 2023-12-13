@@ -14,7 +14,7 @@ const ConfirmAccount = () => {
         const confirmAccount = async () => {
             try {
 
-                const { data } = await axiosClient(`/confirm/${token}`)
+                const { data } = await axiosClient(`/perfis/${token}`)
 
                 setAlert({
                     msg: data.msg,

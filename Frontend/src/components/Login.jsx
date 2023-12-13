@@ -1,12 +1,12 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import axiosClient from "../config/axiosClient";
+import { Form, Input } from "antd";
 
 
 const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-
     const navigate = useNavigate()
 
     const handleSubmit = async e => {
@@ -14,7 +14,6 @@ const Login = () => {
         try {
             const { data } = await axiosClient.post('/login', { email, password })
             console.log("try")
-            localStorage.setItem('token', data.token)
             navigate('/')
         } catch (error) {
             console.log("error")
@@ -25,15 +24,13 @@ const Login = () => {
     return (
 
         <>
+            <Form onSubmit={handleSubmit}>
             <h1 >Inicia Sesión</h1>
-            <form 
-                onSubmit={handleSubmit}
-            >
                 <div >
                     <label 
                     >Email</label>
 
-                    <input
+                    <Input
                         type="email"
                         placeholder="Ingrese su Correo"
                         
@@ -45,7 +42,7 @@ const Login = () => {
                 <div >
                     <label 
                     >Contraseña</label>
-                    <input
+                    <Input
                         type="password"
                         placeholder="Ingrese su contraseña"
                         
@@ -54,21 +51,22 @@ const Login = () => {
                     />
 
                 </div>
-                <input
+                <br />
+                <Input
                     type="submit"
                     value={'Iniciar Sesión'}
                     
                 />
-            </form>
             <nav >
                 <Link                    
                     to='/register'>¿No tienes una cuenta? Regístrate
                 </Link>
-                
+                <br />
                 <Link
                     to='/forgot-password'>¿Olvidaste la contraseña?
                 </Link>
             </nav>
+            </Form>
 
         </>
     )

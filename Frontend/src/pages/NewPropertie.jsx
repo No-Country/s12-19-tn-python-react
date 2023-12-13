@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Navigate, useParams } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Navigate } from 'react-router-dom'
 import Services from '../components/Services'
 import axiosClient from '../config/axiosClient'
 import Uploader from './../components/Uploader';
@@ -7,7 +7,6 @@ import TextArea from 'antd/es/input/TextArea';
 import { Button, Form, Input, InputNumber } from 'antd';
 
 const NewPropertie = () => {
-    const { id } = useParams()
     const [title, setTitle] = useState('')
     const [address, setAddress] = useState('')
     const [addedPhotos, setAddedPhotos] = useState([])
@@ -25,27 +24,6 @@ const NewPropertie = () => {
     const handleUploadedPhotos = (newPhotos) => {
         setAddedPhotos(newPhotos);
     };
-
-    useEffect(() => {
-        if (!id) {
-            return
-        }
-        axiosClient.get('/places/' + id).then(response => {
-            const { data } = response
-            setTitle(data.title)
-            setAddress(data.address)
-            setAddedPhotos(data.photos)
-            setDescription(data.description)
-            setServices(data.services)
-            setExtraInfo(data.extraInfo)
-            setCheckIn(data.checkIn)
-            setCheckOut(data.checkOut)
-            setMaxGuests(data.maxGuests)
-            setRooms(data.rooms)
-            setBathRooms(data.bathRooms)
-            setPrice(data.price)
-        })
-    }, [id])
 
 
     function inputHeader(text) {
@@ -69,26 +47,19 @@ const NewPropertie = () => {
 
     async function savePlace(e) {
         e.preventDefault()
-        const placeData = {
-            title, address, addedPhotos,
+
+        try {
+        const  {data} = await axiosClient.post('/propiedad/create', {title, address, addedPhotos,
             description, services, extraInfo,
-            checkIn, checkOut, maxGuests, rooms, bathRooms, price,
-        }
-        if (id) {
-            // actualizar
-            await axiosClient.put('/places', {
-                id, ...placeData
-            })
+            checkIn, checkOut, maxGuests, rooms, bathRooms, price,})
             setRedirect(true)
-        } else {
-            // nuevo
-            await axiosClient.post('/places', placeData)
-            setRedirect(true)
+        } catch (error) {
+            console.log(error)
         }
 
     }
     if (redirect) {
-        return <Navigate to={'/account/places'} />
+        return <Navigate to={'/'} />
     }
 
     const [size, setSize] = useState('large');

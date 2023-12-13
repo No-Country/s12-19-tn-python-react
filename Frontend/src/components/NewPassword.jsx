@@ -17,12 +17,12 @@ const NewPassword = async () => {
     useEffect(() => {
         const checkToken = async () => {
             try {
-                const { data } = await axiosClient(`/forgot-password/${token}`)
+                const { data } = await axiosClient(`/perfis/${token}`)
                 console.log(data)
                 setValidToken(true)
             } catch (error) {
                 setAlert({
-                    msg: error.response.data.msg,
+                    msg: 'error',
                     error:true
                 })
             }
@@ -45,15 +45,15 @@ const NewPassword = async () => {
 
     try {
         const url = `/forgot-password/${token}`
-        const { data } = await axiosClient.post(url, { password })
+        const { data } = await axiosClient.put(url, { password })
         setAlert({
-            msg: data.msg,
+            msg: 'try',
             error: false
         })
         setPasswordChanged(true)
     } catch (error) {
         setAlert({
-            msg: error.response.data.msg,
+            msg: 'error',
             error: true
         })
     }
@@ -66,14 +66,14 @@ const NewPassword = async () => {
             {validToken && (<form onSubmit={handleSubmit}>
                 <div>
                     <label>Contraseña</label>
-                    <input
+                    <Input
                         type="password"
                         placeholder="Ingrese su contraseña"
                         value={password}
                         onChange={e => setPasword(e.target.value)}
                     />
                 </div>
-                <input
+                <Input
                     type="submit"
                     value={'Guardar Nueva Contraseña'} />
             </form>

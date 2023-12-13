@@ -38,14 +38,14 @@ const ForgotPassword = () => {
                 <div>
                     <label>Email</label>
 
-                    <input
+                    <Input
                         type="email"
                         placeholder="Ingrese su Correo"                        
                         onChange={e => setEmail(e.target.value)}
                     />
                 </div>
 
-                <input
+                <Input
                     type="submit"
                     value={'Enviar Email'}
                     />
