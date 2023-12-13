@@ -4,7 +4,7 @@ from .models import Comentario
 from usuario.serializers import UserSerializer
 from propiedad.serializers import PropiedadSerializers
 
-class ComentarioSerializers(serializers.Serializer):
+class ComentarioSerializers(serializers.ModelSerializer):
 
     user = UserSerializer()
     propiedad = PropiedadSerializers()

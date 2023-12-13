@@ -6,7 +6,7 @@ from .models import Propiedad
 from usuario.serializers import UserSerializer
 
 
-class PropiedadSerializers(serializers.Serializer):
+class PropiedadSerializers(serializers.ModelSerializer):
     user = UserSerializer()
     class Meta:
         model = Propiedad
