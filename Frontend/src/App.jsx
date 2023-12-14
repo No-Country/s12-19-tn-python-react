@@ -14,9 +14,10 @@ import { AuthProvider } from "./context/AuthProvider";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
     <AuthProvider>
       <Navbar />
+      <div className="App-body">
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="propiedad" element={<Propiedad/>}/>
@@ -28,8 +29,9 @@ function App() {
         <Route path='/forgot-password/:token' element={<NewPassword/>}/>
         <Route path='/confirm/:token' element={<ConfirmAccount/>}/>
       </Routes>
+      </div>
       </AuthProvider>
-    </BrowserRouter>
+    </>
   );
 }
 

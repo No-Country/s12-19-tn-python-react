@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import Alert from "./Alert"
 import axiosClient from "../config/axiosClient"
+import { Form, Input } from "antd"
 
 const ForgotPassword = () => {
     const [email, setEmail] = useState('')
@@ -28,12 +29,12 @@ const ForgotPassword = () => {
     const { msg } = alert
 
     return (
-        <>
+        <div className="formulario">
             {msg && <Alert alert={alert} />}
+            <Form onSubmit={handleSubmit}>
             <h1>Escribe tu email para recuperar
                 tu cuenta</h1>
 
-            <form onSubmit={handleSubmit}>
 
                 <div>
                     <label>Email</label>
@@ -49,13 +50,14 @@ const ForgotPassword = () => {
                     type="submit"
                     value={'Enviar Email'}
                     />
-            </form>
             <nav>
                 <Link to='/login'>Ya tienes una cuenta? Inicia Sesión</Link>
+                <br />
                 <Link to='/register'>¿No tienes una cuenta? Regístrate</Link>
             </nav>
+            </Form>
 
-        </>
+        </div>
     )
 }
 

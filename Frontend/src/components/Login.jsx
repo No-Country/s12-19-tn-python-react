@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom"
 import axiosClient from "../config/axiosClient";
 import { Form, Input } from "antd";
 
-
 const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -22,8 +21,8 @@ const Login = () => {
 
 
     return (
-
-        <>
+        
+        <div className="formulario">
             <Form onSubmit={handleSubmit}>
             <h1 >Inicia Sesión</h1>
                 <div >
@@ -67,8 +66,7 @@ const Login = () => {
                 </Link>
             </nav>
             </Form>
-
-        </>
+            </div>
     )
 }
 

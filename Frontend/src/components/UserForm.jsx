@@ -66,126 +66,119 @@ const UserForm = () => {
   const { msg } = alert
 
   return (
-    <>
+    <div className="formulario">
       <Form onSubmit={handleSubmit}>
         <h1>Registro</h1>
-
+        <br />
         {msg && <Alert alert={alert} />}
 
-        <div >
+
           <label
           >Usuario</label>
-
           <Input
             type="text"
             placeholder="Ingrese su Usuario"
-
             value={userName}
             onChange={e => setUserName(e.target.value)}
           />
-        </div>
-        <div >
+
+
           <label
           >Nombre</label>
-
           <Input
             type="text"
             placeholder="Ingrese su nombre"
-
             value={firstName}
             onChange={e => setFirstName(e.target.value)}
           />
-        </div>
-        <div >
+
+
           <label
           >Apellido</label>
-
           <Input
             type="text"
             placeholder="Ingrese su apellido"
-
             value={lastName}
             onChange={e => setLastName(e.target.value)}
           />
-        </div>
-        <div >
-          <label>Número de contacto</label>
 
+
+          <label>Número de contacto</label>
           <Input
             type="text"
             placeholder="Ingrese su Whatsapp"
-
             value={wsp}
             onChange={e => setWsp(e.target.value)}
           />
-        </div>
 
-        <div >
+
           <label
           >Email</label>
-
           <Input
             type="email"
             placeholder="Ingrese su Correo"
-
             value={email}
             onChange={e => setEmail(e.target.value)}
           />
-        </div>
 
-        <div >
+
           <label
           >Contraseña</label>
           <Input
             type="password"
             placeholder="Ingrese su contraseña"
-
             value={password}
             onChange={e => setPasword(e.target.value)}
           />
-        </div>
 
-        <div >
+
+
           <label
           >Confirmar Contraseña</label>
           <Input
             type="password"
             placeholder="Ingrese nuevamente su contraseña"
-
             value={repeatPassword}
             onChange={e => setRepeatPassword(e.target.value)}
           />
-        </div>
-        <div >
+
+
           <label
           >Dirección</label>
           <Input
             type="text"
             placeholder="Ingrese la dirección de la propiedad"
-
             value={direction}
             onChange={e => setDirection(e.target.value)}
           />
-        </div>
-        <div >
+
+
           <label
           >Documento</label>
           <Input
             type="text"
             placeholder="Ingrese su DNI"
-
             value={document}
             onChange={e => setDocument(e.target.value)}
           />
-        </div>
+
 
         <Input
           type="submit"
           value={'Crear Cuenta'}
         />
+        <nav >
+                <Link                    
+                    to='/login'>¿Ya tienes cuenta? Inicia Sesión.
+                </Link>
+                <br />
+                <Link
+                    to='/forgot-password'>¿Olvidaste la contraseña?
+                </Link>
+            </nav>
       </Form>
 
-    </>
+    </div>
   )
 }
 

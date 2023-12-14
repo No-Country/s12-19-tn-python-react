@@ -6,12 +6,12 @@ const onChange = (checkedValues) => {
 };
 const plainOptions = ['Wifi', 'TV', 'Aire Acondicionado', 'Calefacción', 'Microondas','Cocina', 'Hervidor',
     'secadora', 'Lavadora', 'Estacionamiento', 'Admite mascotas', 'Rampa para discapasitados',
-    'Elevador/Ascensor', 'Inodoro y ducha con barra de apoyo'];
+    'Elevador/Ascensor', 'Baños con barra de apoyo'];
 
 const App = () => (
     <> 
     <br />
-        <Checkbox.Group options={plainOptions} onChange={onChange} />
+        <Checkbox.Group className='checks' options={plainOptions} onChange={onChange} />
     <br />
     <br />
     </>
