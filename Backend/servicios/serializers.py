@@ -5,7 +5,7 @@ from propiedad.serializers import PropiedadSerializers
 
 class ServicioSerializers(serializers.ModelSerializer):
 
-    propiedad = PropiedadSerializers()
+
     class Meta:
         model = Servicio
-        fields = ['nombre','descripcion','propiedad']
+        fields = ['nombre','descripcion','propiedad_id']

@@ -5,7 +5,6 @@ from propiedad.serializers import PropiedadSerializers
 
 
 class GaleriaSerializers(serializers.ModelSerializer):
-    propiedad = PropiedadSerializers()
     class Meta:
         model = Galeria
-        fields = ['imagen','descripcion','propiedad']
+        fields = ['imagen','descripcion','propiedad_id']

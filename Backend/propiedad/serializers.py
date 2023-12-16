@@ -7,7 +7,6 @@ from usuario.serializers import UserSerializer
 
 
 class PropiedadSerializers(serializers.ModelSerializer):
-    user = UserSerializer()
     class Meta:
         model = Propiedad
-        fields = ['nombre','descricion','extra_info','ubicacion','numero_banos','numero_habitaciones','invitados_max','capacidad','tarifa','user']
+        fields = ['nombre','descricion','extra_info','ubicacion','numero_banos','numero_habitaciones','invitados_max','capacidad','tarifa','user_id']

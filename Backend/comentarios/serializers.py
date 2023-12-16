@@ -6,16 +6,10 @@ from propiedad.serializers import PropiedadSerializers
 
 class ComentarioSerializers(serializers.ModelSerializer):
 
-    user = UserSerializer()
-    propiedad = PropiedadSerializers()
     class Meta:
         model = Comentario
-        fields = ['calificacion','comentario','user','propiedad']
+        fields = ['calificacion','comentario','user_id','propiedad_id']
 
-class ComentarioCreateSerializers(serializers.ModelSerializer):
-    class Meta:
-        model = Comentario
-        fields = ['user_id', 'propiedad_id', 'calificacion', 'comentario']
 
 class ComentarioUpdateSerializers(serializers.ModelSerializer):
     class Meta:

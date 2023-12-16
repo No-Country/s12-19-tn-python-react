@@ -32,7 +32,7 @@ def detail_propiedad(request, id):
 )
 @api_view(['POST'])
 def create_propiedad(request):
-    serializer = PropiedadCreateSerializers(data=request.data)
+    serializer = PropiedadSerializers(data=request.data)
     if serializer.is_valid():
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)

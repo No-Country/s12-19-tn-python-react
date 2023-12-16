@@ -4,7 +4,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 from .models import Comentario
-from .serializers import ComentarioCreateSerializers, ComentarioSerializers,ComentarioUpdateSerializers
+from .serializers import ComentarioSerializers, ComentarioSerializers,ComentarioUpdateSerializers
 from drf_yasg.utils import swagger_auto_schema
 
 @swagger_auto_schema(method='get', operation_description="Listar todos los comentarios")
@@ -28,7 +28,7 @@ def detail_comentario(request, id):
 
 @swagger_auto_schema(
     method='post',
-    request_body=ComentarioCreateSerializers,  
+    request_body=ComentarioSerializers,  
     operation_description="Crear un nuevo comentario"
 )
 @api_view(['POST'])

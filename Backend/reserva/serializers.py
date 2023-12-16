@@ -9,11 +9,9 @@ from propiedad.serializers import PropiedadSerializers
 
 class ReservaSerializer(serializers.ModelSerializer):
 
-    user = UserSerializer()
-    propiedad = PropiedadSerializers()
     class Meta:
         model = Reserva
-        fields = ['fecha_inicio','fecha_fin','costo_total', 'user','propiedad']
+        fields = ['fecha_inicio','fecha_fin','costo_total', 'user_id','propiedad_id']
 
 
 
