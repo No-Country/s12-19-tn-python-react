@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Properties from "./components/Properties";
+import Inicio from "./pages/Inicio";
+import Navbar from "./components/Navbar";
+import NewPorpertie from "./Pages/NewPropertie";
+import Form from "./components/Form";
+import Login from "./components/Login";
+import ForgotPassword from './components/ForgotPassword';
+import NewPassword from "./components/NewPassword";
+import ConfirmAccount from "./components/ConfirmAccount";
+import Propiedad from "./pages/Popiedad"
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+      <Routes>
+        <Route path="propiedad" element={<Propiedad/>}/>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/properties" element={<Properties />} />
+        <Route path="/new-propertie" element={<NewPorpertie />} />
+        <Route path="/register" element={<Form />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path='/forgot-password/:token' element={<NewPassword/>}/>
+        <Route path='/confirm/:token' element={<ConfirmAccount/>}/>
+        <Route path="new-propertie" element={<NewPorpertie/>} />
+        <Route path="register" element={<Form/>} />
+      </Routes>
+
+   
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
