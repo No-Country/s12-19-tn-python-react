@@ -58,7 +58,7 @@ https://templatemo.com/tm-580-woox-travel
                     <ul class="nav">
                       <li><a href="propiedades.html" class="active">Propiedades</a></li>
                       <li><a href="usd.html">USD($)</a></li>
-                      <li><a href="ingresa-propiedad.html">Ingresa tu propiedad</a></li>
+                      <li><a href="iniciar-sesion.html">Ingresa tu propiedad</a></li>
                       <li><a href="iniciar-sesion.html">Inicia sesión</a></li>
                       <li><a href="registrate.html">Regístrate</a></li>
                   </ul>   
@@ -73,107 +73,181 @@ https://templatemo.com/tm-580-woox-travel
   </header>
   <!-- ***** Header Area End ***** -->
 
-
-  <div class="second-page-heading">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h4>Book Prefered Deal Here</h4>
-          <h2>Make Your Reservation</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt uttersi labore et dolore magna aliqua is ipsum suspendisse ultrices gravida</p>
-          <div class="main-button"><a href="about.html">Discover More</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="more-info reservation-info">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-sm-6">
-          <div class="info-item">
-            <i class="fa fa-phone"></i>
-            <h4>Make a Phone Call</h4>
-            <a href="#">+123 456 789 (0)</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="info-item">
-            <i class="fa fa-envelope"></i>
-            <h4>Contact Us via Email</h4>
-            <a href="#">company@email.com</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="info-item">
-            <i class="fa fa-map-marker"></i>
-            <h4>Visit Our Offices</h4>
-            <a href="#">24th Street North Avenue London, UK</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="reservation-form">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth" width="100%" height="450px" frameborder="0" style="border:0; border-top-left-radius: 23px; border-top-right-radius: 23px;" allowfullscreen=""></iframe>
-          </div>
-        </div>
+        
         <div class="col-lg-12">
           <form id="reservation-form" name="gs" method="submit" role="search" action="#">
             <div class="row">
               <div class="col-lg-12">
-                <h4>Make Your <em>Reservation</em> Through This <em>Form</em></h4>
+                <h4>Publicar en StayNest es muy fácil</h4>
+                <h6>Sólo completa el formulario y publícalo. ¡Todo el mundo podrá conocer tu propiedad!</h6>
+                <hr>
               </div>
               <div class="col-lg-6">
                   <fieldset>
-                      <label for="Name" class="form-label">Your Name</label>
-                      <input type="text" name="Name" class="Name" placeholder="Ex. John Smithee" autocomplete="on" required>
+                      <label for="titulo" class="form-label">Título de la propiedad</label>
+                      <input type="text" id="titulo" name="titulo" placeholder="Añade un título corto y preciso" autocomplete="on" required>
+        
                   </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                    <label for="Number" class="form-label">Your Phone Number</label>
-                    <input type="text" name="Number" class="Number" placeholder="Ex. +xxx xxx xxx" autocomplete="on" required>
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="¿Dónde se ubica tu propiedad?" autocomplete="on" required>
+      
                 </fieldset>
               </div>
+
+
               <div class="col-lg-6">
-                  <fieldset>
-                      <label for="chooseGuests" class="form-label">Number Of Guests</label>
-                      <select name="Guests" class="form-select" aria-label="Default select example" id="chooseGuests" onChange="this.form.click()">
-                          <option selected>ex. 3 or 4 or 5</option>
-                          <option type="checkbox" name="option1" value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4+">4+</option>
-                      </select>
-                  </fieldset>
+                <label for="servicios">Servicios</label>
+                <p>Selecciona los servicios disponibles:</p>
+                <table style="border-collapse: collapse;">
+                  <tr>
+                    <td style="padding-right: 20px;">
+                      <input type="checkbox" id="wifi" name="wifi" value="wifi" style="transform: scale(0.4); vertical-align: middle;">
+                      <center><label for="wifi">Wifi</label></center>
+                    </td>
+                
+                    <td style="padding-right: 20px; padding-left: 20px;">
+                      <input type="checkbox" id="hervidor" name="hervidor" value="hervidor" style="transform: scale(0.4); vertical-align: middle;">
+                      <center><label for="hervidor">Hervidor</label></center>
+                    </td>
+                
+                    <td style="padding-left: 20px;">
+                      <input type="checkbox" id="secadora" name="secadora" value="secadora" style="transform: scale(0.4); vertical-align: middle;">
+                      <center><label for="secadora">Secadora</label></center>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td style="padding-right: 20px;">
+                      <input type="checkbox" id="aire_acondicionado" name="aire_acondicionado" value="aire_acondicionado" style="transform: scale(0.4); vertical-align: middle;">
+                      <center><label for="aire_acondicionado">Aire acondicionado</label></center>
+                    </td>
+                
+                    <td style="padding-right: 20px; padding-left: 20px;">
+                      <input type="checkbox" id="lavadora" name="lavadora" value="lavadora" style="transform: scale(0.4); vertical-align: middle;">
+                      <center><label for="lavadora">Lavadora</label></center>
+                    </td>
+                
+                    <td style="padding-left: 20px;">
+                      <input type="checkbox" id="calefaccion" name="calefaccion" value="calefaccion" style="transform: scale(0.4); vertical-align: middle;">
+                      <center><label for="calefaccion">Calefacción</label></center>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td style="padding-right: 20px;">
+                      <input type="checkbox" id="estacionamiento" name="estacionamiento" value="estacionamiento" style="transform: scale(0.4); vertical-align: middle;">
+                      <center><label for="estacionamiento">Estacionamiento</label></center>
+                    </td>
+                
+                    <td style="padding-right: 20px; padding-left: 20px;">
+                      <input type="checkbox" id="microondas" name="microondas" value="microondas" style="transform: scale(0.4); vertical-align: middle;">
+                      <center><label for="microondas">Microondas</label></center>
+                    </td>
+                
+                    <td style="padding-left: 20px;">
+                      <input type="checkbox" id="admite_mascotas" name="admite_mascotas" value="admite_mascotas" style="transform: scale(0.4); vertical-align: middle;">
+                      <center><label for="admite_mascotas">Admite mascotas</label></center>
+                    </td>
+                  </tr>
+
+                </table>
+                  
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                    <label for="Number" class="form-label">Check In Date</label>
-                    <input type="date" name="date" class="date" required>
+                  <label for="descripcion" class="form-label">Descripción</label>
+                  <textarea id="descripcion" name="descripcion" placeholder="Comparte lo que distingue tu propiedad y lo hace única." cols="50" rows="10"></textarea>
+
                 </fieldset>
               </div>
-              <div class="col-lg-12">
+              
+              <div class="col-lg-6">
+                <label for="servicios"></label>
+                <p>Accesibilidad:</p>
+                <table style="border-collapse: collapse;">
+                  <tr>
+                    <td style="padding-right: 20px;">
+                      <input type="checkbox" id="adaptado_silla_ruedas" name="adaptado_silla_ruedas" value="adaptado_silla_ruedas" style="transform: scale(0.4); vertical-align: middle;">
+                      <center><label for="adaptado_silla_ruedas">Adaptado para silla de ruedas</label></center>
+                    </td>
+                    <td style="padding-right: 20px; padding-left: 20px;">
+                      <input type="checkbox" id="elevador_ascensor" name="elevador_ascensor" value="elevador_ascensor" style="transform: scale(0.4); vertical-align: middle;">
+                      <center><label for="elevador_ascensor">Elevador / Ascensor</label></center>
+                    </td>
+                    <td style="padding-right: 20px;">
+                      <input type="checkbox" id="wc_ducha_barra_apoyo" name="wc_ducha_barra_apoyo" value="wc_ducha_barra_apoyo" style="transform: scale(0.4); vertical-align: middle;">
+                      <center><label for="wc_ducha_barra_apoyo">WC y ducha con barra de apoyo</label></center>
+                    </td>
+                  </tr>
+                  <!-- Puedes agregar más elementos si es necesario -->
+                </table>
+              </div>
+              <div class="col-lg-6">
+                <label for="info-extra" class="form-label">Información extra</label>
+                <textarea id="info-extra" name="info-extra" placeholder="Acá puedes detallar reglas de conviviencia u otra información." cols="50" rows="10"></textarea>
+              </div> 
+              <div class="col-lg-6">
                   <fieldset>
-                      <label for="chooseDestination" class="form-label">Choose Your Destination</label>
-                      <select name="Destination" class="form-select" aria-label="Default select example" id="chooseCategory" onChange="this.form.click()">
-                          <option selected>ex. Switzerland, Lausanne</option>
-                          <option value="Italy, Roma">Italy, Roma</option>
-                          <option value="France, Paris">France, Paris</option>
-                          <option value="Engaland, London">Engaland, London</option>
-                          <option value="Switzerland, Lausanne">Switzerland, Lausanne</option>
-                      </select>
+                    <label for="fotos" class="form-label">Fotos</label>
+                    <p>Agrega fotos de tu propiedad. ¡Elige las mejores!</p>
+                    <input type="file" id="fotos" name="fotos" accept="image/*" multiple>
                   </fieldset>
+              </div>
+              <div class="col-lg-6"><hr>
+                <label for="horarios">Horarios</label>
+                <p>Agrega horarios de entrada y salida:</p><hr>
+                <input type="time" id="check-in" name="check-in">
+                <label for="check-in">Check-in</label><hr>
+                <input type="time" id="check-out" name="check-out">
+                <label for="check-out">Check-out</label>
+              </div>
+              <hr><hr>
+              <div class="col-lg-6">
+                <label for="cantidad_habitaciones">Cantidad de habitaciones:</label>
+                <select id="cantidad_habitaciones" name="cantidad_habitaciones">
+                  <option value="1">1 habitación</option>
+                  <option value="2">2 habitaciones</option>
+                  <option value="3">3 habitaciones</option>
+                  <option value="4">4 habitaciones</option>
+                  <!-- Puedes agregar más opciones según sea necesario -->
+                </select>
+                <label for="cantidad_banos">Cantidad de baños:</label>
+                <select id="cantidad_banos" name="cantidad_banos">
+                  <option value="1">1 baño</option>
+                  <option value="2">2 baños</option>
+                  <option value="3">3 baños</option>
+                  <option value="4">4 baños</option>
+                  <!-- Puedes agregar más opciones según sea necesario -->
+                </select>
+              </div>
+              <div class="col-lg-6">
+                <label for="max_huespedes">Número máximo de huéspedes:</label>
+                <select id="max_huespedes" name="max_huespedes">
+                  <option value="1">1 huésped</option>
+                  <option value="2">2 huéspedes</option>
+                  <option value="3">3 huéspedes</option>
+                  <option value="4">4 huéspedes</option>
+                  <!-- Puedes agregar más opciones según sea necesario -->
+                </select>
+                <label for="precio_noche">Precio por noche:</label>
+                <select id="precio_noche" name="precio_noche">
+                  <option value="$50">$50</option>
+                  <option value="$100">$100</option>
+                  <option value="$150">$150</option>
+                  <option value="$200">$200</option>
+                  <!-- Puedes agregar más opciones según sea necesario -->
+                </select>
+
               </div>
               <div class="col-lg-12">                        
                   <fieldset>
-                      <button class="main-button">Make Your Reservation Now</button>
+                      <button class="main-button">Publicar propiedad</button>
                   </fieldset>
               </div>
             </div>
