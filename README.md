@@ -43,10 +43,15 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 https://s12-19-tn-abnb.onrender.com/swagger/
 
 ## Información de las pruebas ⚙️
+_El Equipo de Testing orientó su esfuerzos a la verificación de la apariencia y funcionalidad de la Interfaz de usuario; navegacion por las diferentes secciones, búsqueda, visualización de listados y proceso de reserva. Seguidamente, la consistencia del diseño, colores, tipografía y disposición de los
+elementos en diferentes dispositivos, tamaños de pantalla y demas características 
+evidenciados en el prototipo propuesto desde el area de diseño UX/UI.
+ 
+_En Definitiva, participar activamente en la construcción de un producto que cumpla con los 
+Estandares de Calidad Sugeridos._
 
-_Desde el área de Testing orientó su enfoque a la verificación de la apariencia y funcionalidad de la interfaz de usuario, incluyendo la búsqueda, visualización de listados y proceso de reserva._
-_Así mismo  la navegación para asegurar que los usuarios puedan moverse fácilmente entre las páginas y categorias, y que los elementos de la interfaz se desplegasen correctamente._
-_Se validó la consistencia del diseño, colores, tipografía y disposición de los elementos en diferentes dispositivos y tamaños de pantalla._
+Ingrese al Siguiente link par revision de Documentacion.-
+https://drive.google.com/drive/folders/1QEo4Z1jrdk4q4NLiN-ukgAg5lYpXFvQh?usp=sharing pantalla._
 
 ## Despliegue 📦
 
@@ -69,7 +74,7 @@ _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
 * **Carlos** - *Back* 
 * **Evelyn Riascos** - *Back* 
 * **Gastón Ruiz** - *Tester* 
-* **Thamairy Gonzalez** - *Tester* 
+* **Thamairy González** - *Tester* 
 
 
 ## Licencia 📄
