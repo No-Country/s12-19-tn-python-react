@@ -44,6 +44,7 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
+    path('',include('staynest.urls')),
     path('admin/', admin.site.urls),
     path('api/', include('usuario.urls')),
     path('api/', include('reserva.urls')),
