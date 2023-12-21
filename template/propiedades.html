@@ -8,14 +8,14 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>WoOx Travel Bootstrap 5 Theme</title>
+    <title>StayNest - Propiedades</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min2.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
+    <link rel="stylesheet" href="assets/css/templatemo-woox-travel2.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
@@ -59,7 +59,7 @@ https://templatemo.com/tm-580-woox-travel
                     <ul class="nav">
                       <li><a href="propiedades.html" class="active">Propiedades</a></li>
                       <li><a href="usd.html">USD($)</a></li>
-                      <li><a href="iniciar-sesion.html">Ingresa tu propiedad</a></li>
+                      <li><a href="ingresa-propiedad.html">Ingresa tu propiedad</a></li>
                       <li><a href="iniciar-sesion.html">Inicia sesión</a></li>
                       <li><a href="registrate.html">Regístrate</a></li>
                   </ul>   
@@ -73,195 +73,493 @@ https://templatemo.com/tm-580-woox-travel
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
-
-  <div class="page-heading">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h4>Discover Our Weekly Offers</h4>
-          <h2>Amazing Prices &amp; More</h2>
-          <div class="border-button"><a href="about.html">Discover More</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="search-form">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <form id="search-form" name="gs" method="submit" role="search" action="#">
-            <div class="row">
-              <div class="col-lg-2">
-                <h4>Sort Deals By:</h4>
-              </div>
-              <div class="col-lg-4">
-                  <fieldset>
-                      <select name="Location" class="form-select" aria-label="Default select example" id="chooseLocation" onChange="this.form.click()">
-                          <option selected>Destinations</option>
-                          <option type="checkbox" name="option1" value="Italy">Italy</option>
-                          <option value="France">France</option>
-                          <option value="Switzerland">Switzerland</option>
-                          <option value="Thailand">Thailand</option>
-                          <option value="Australia">Australia</option>
-                          <option value="India">India</option>
-                          <option value="Indonesia">Indonesia</option>
-                          <option value="Malaysia">Malaysia</option>
-                          <option value="Singapore">Singapore</option>
-                      </select>
-                  </fieldset>
-              </div>
-              <div class="col-lg-4">
-                  <fieldset>
-                      <select name="Price" class="form-select" aria-label="Default select example" id="choosePrice" onChange="this.form.click()">
-                          <option selected>Price Range</option>
-                          <option value="100">$100 - $250</option>
-                          <option value="250">$250 - $500</option>
-                          <option value="500">$500 - $1,000</option>
-                          <option value="1000">$1,000 - $2,500</option>
-                          <option value="2500+">$2,500+</option>
-                      </select>
-                  </fieldset>
-              </div>
-              <div class="col-lg-2">                        
-                  <fieldset>
-                      <button class="border-button">Search Results</button>
-                  </fieldset>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
+   
   <div class="amazing-deals">
+      
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading text-center">
-            <h2>Best Weekly Offers In Each City</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-6">
-          <div class="item">
+        <div class="buscador d-flex justify-content-center align-items-center">
+    <div class="col-lg-12">
+        <div class="more-info" style="margin-top: 5px;">
             <div class="row">
-              <div class="col-lg-6">
-                <div class="image">
-                  <img src="assets/images/deals-01.jpg" alt="">
+                <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center">
+                  <div class="icono">  <i class="fa fa-globe"></i> </div>
+                    <h6 class="ml-2 mr-4">Destino</h6>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 d-flex align-items-center">
+                   <div class="icono"> <i class="fa fa-check"></i></div>
+                    <h6 class="ml-2 mr-4">Check-in / Check-out</h6>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center">
+                    <div class="icono"><i class="fa fa-user"></i></div>
+                    <h6 class="ml-2 mr-4">2 adultos</h6>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 d-flex align-items-center">
+                    <div class="icono"><i class="fa fa-home"></i></div>
+                    <h6 class="ml-2 mr-4">Tipo de propiedad</h6>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-6">
+                    <div class="main-button">
+                        <a href="propiedades.html">BUSCAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <button class="filter-button" onclick="togglePopup()">
+        <i class="fas fa-filter filter-icon"></i>
+        Filtros
+    </button>
+
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <!-- Contenido de tu ventana emergente -->
+            <h6>Selecciona de acuerdo a lo que necesites</h6>
+
+   <form action="#" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="rango-precios">Rango de precios:</label>
+                    <select id="rango-precios" name="rango-precios">
+                        <option value="10-40">De US $10 a US $40</option>
+                        <option value="41-80">De US $41 a US $80</option>
+                        <option value="81-100">De US $81 a US $100</option>
+                        <option value="101+">Desde US $101 en adelante</option>
+                    </select>
+                </td>
+            </tr>
+           
+            <tr>
+                 
+                <td><input type="checkbox" name="servicios" value="1"> Wifi</td>
+                <td><input type="checkbox" name="servicios" value="6"> Admite mascotas</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="servicios" value="2"> Lavadora</td>
+                <td><input type="checkbox" name="servicios" value="7"> Microondas</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="servicios" value="3"> Aire acondicionado</td>
+                <td><input type="checkbox" name="servicios" value="8"> Secadora</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="servicios" value="4"> Estacionamiento</td>
+                <td><input type="checkbox" name="servicios" value="9"> TV</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="servicios" value="5"> Cocina</td>
+                <td><input type="checkbox" name="servicios" value="10"> Calefacción</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="servicios" value="11"> Plancha</td>
+                <td><input type="checkbox" name="servicios" value="12"> Hervidor</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="habitaciones">Cantidad de habitaciones:</label>
+                    <select id="habitaciones" name="habitaciones">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="baños">Cantidad de baños:</label>
+                    <select id="baños" name="baños">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <button class="close-button" type="submit">BUSCAR</button>
+    </form>
+  <button class="close-button2" onclick="togglePopup()">Cerrar</button>
+        </div>
+    </div>
+<div class="amazing-deals2">    
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <div class="item mb-4">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="image"> <a href="detalle-propiedad.html" target="_blank"><img src="assets/images/deals-01.jpg" alt=""></a>
                 </div>
               </div>
-              <div class="col-lg-6 align-self-center">
+              <div class="col-lg-12 align-self-center">
                 <div class="content">
-                  <span class="info">*Limited Offer Today</span>
-                  <h4>Glasgow City Lorem</h4>
                   <div class="row">
-                    <div class="col-6">
-                      <i class="fa fa-clock"></i>
-                      <span class="list">5 Days</span>
+                    <div class="col-8">
+                   <H6>Barcelona</H6>
                     </div>
-                    <div class="col-6">
-                      <i class="fa fa-map"></i>
-                      <span class="list">Daily Places</span>
+                    <div class="col-4">
+                      <i class="fa fa-star"></i>
+                      <span class="list">5</span>
                     </div>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet dire consectetur adipiscing elit.</p>
+                      <div class="col-14">
+                      <span class="list"><strong>US $40</strong> noche</span>
+                    </div>
+                 </div>
                   <div class="main-button">
-                    <a href="reservation.html">Make a Reservation</a>
+                   
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-sm-6">
-          <div class="item">
+        <div class="col-lg-3 col-sm-6">
+          <div class="item mb-4">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <div class="image">
                   <img src="assets/images/deals-02.jpg" alt="">
                 </div>
               </div>
-              <div class="col-lg-6 align-self-center">
+              <div class="col-lg-12 align-self-center">
                 <div class="content">
-                  <span class="info">*Today & Tomorrow Only</span>
-                  <h4>Venezia Italy Ipsum</h4>
                   <div class="row">
-                    <div class="col-6">
-                      <i class="fa fa-clock"></i>
-                      <span class="list">5 Days</span>
+                    <div class="col-8">
+                   <H6>Barcelona</H6>
                     </div>
-                    <div class="col-6">
-                      <i class="fa fa-map"></i>
-                      <span class="list">Daily Places</span>
+                    <div class="col-4">
+                      <i class="fa fa-star"></i>
+                      <span class="list">5</span>
+                    </div>
+                      <div class="col-9">
+                      <span class="list"><strong>US $40</strong> noche</span>
+                    </div>
+                    <div class="col-3">
+                      
                     </div>
                   </div>
-                  <p>Lorem ipsum dolor sit amet dire consectetur adipiscing elit.</p>
-                  <div class="main-button">
-                    <a href="reservation.html">Make a Reservation</a>
+                    <div class="main-button">
+                  
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="item">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <div class="image">
                   <img src="assets/images/deals-03.jpg" alt="">
                 </div>
               </div>
-              <div class="col-lg-6 align-self-center">
+              <div class="col-lg-12 align-self-center">
                 <div class="content">
-                  <span class="info">**Undefined</span>
-                  <h4>Glasgow City Lorem</h4>
                   <div class="row">
-                    <div class="col-6">
-                      <i class="fa fa-clock"></i>
-                      <span class="list">5 Days</span>
+                    <div class="col-8">
+                   <H6>Barcelona</H6>
                     </div>
-                    <div class="col-6">
-                      <i class="fa fa-map"></i>
-                      <span class="list">Daily Places</span>
+                    <div class="col-4">
+                      <i class="fa fa-star"></i>
+                      <span class="list">5</span>
+                    </div>
+                      <div class="col-9">
+                      <span class="list"><strong>US $40</strong> noche</span>
+                    </div>
+                    <div class="col-3">
+                      
                     </div>
                   </div>
-                  <p>Lorem ipsum dolor sit amet dire consectetur adipiscing elit.</p>
+                    <div class="main-button">
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="image">
+                  <img src="assets/images/deals-04.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-12 align-self-center">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-8">
+                   <H6>Barcelona</H6>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa fa-star"></i>
+                      <span class="list">5</span>
+                    </div>
+                      <div class="col-9">
+                      <span class="list"><strong>US $40</strong> noche</span>
+                    </div>
+                    <div class="col-3">
+                      
+                    </div>
+                  </div>
                   <div class="main-button">
-                    <a href="reservation.html">Make a Reservation</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-sm-6">
+          <div class="col-lg-3 col-sm-6">
           <div class="item">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <div class="image">
-                  <img src="assets/images/deals-04.jpg" alt="">
+                  <img src="assets/images/deals-05.jpg" alt="">
                 </div>
               </div>
-              <div class="col-lg-6 align-self-center">
+              <div class="col-lg-12 align-self-center">
                 <div class="content">
-                  <span class="info">*Offer Until 24th March</span>
-                  <h4>Glasgow City Lorem</h4>
                   <div class="row">
-                    <div class="col-6">
-                      <i class="fa fa-clock"></i>
-                      <span class="list">5 Days</span>
+                    <div class="col-8">
+                   <H6>Barcelona</H6>
                     </div>
-                    <div class="col-6">
-                      <i class="fa fa-map"></i>
-                      <span class="list">Daily Places</span>
+                    <div class="col-4">
+                      <i class="fa fa-star"></i>
+                      <span class="list">5</span>
+                    </div>
+                      <div class="col-9">
+                      <span class="list"><strong>US $40</strong> noche</span>
+                    </div>
+                    
+                  </div>
+                  <div class="main-button">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-3 col-sm-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="image">
+                  <img src="assets/images/deals-06.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-12 align-self-center">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-8">
+                   <H6>Barcelona</H6>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa fa-star"></i>
+                      <span class="list">5</span>
+                    </div>
+                      <div class="col-9">
+                      <span class="list"><strong>US $40</strong> noche</span>
+                    </div>
+                    <div class="col-3">
+                      
                     </div>
                   </div>
-                  <p>This free CSS template is provided by Template Mo website.</p>
                   <div class="main-button">
-                    <a href="reservation.html">Make a Reservation</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-3 col-sm-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="image">
+                  <img src="assets/images/deals-07.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-12 align-self-center">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-8">
+                   <H6>Barcelona</H6>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa fa-star"></i>
+                      <span class="list">5</span>
+                    </div>
+                      <div class="col-9">
+                      <span class="list"><strong>US $40</strong> noche</span>
+                    </div>
+                    <div class="col-3">
+                      
+                    </div>
+                  </div>
+                  <div class="main-button">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-3 col-sm-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="image">
+                  <img src="assets/images/deals-08.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-12 align-self-center">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-8">
+                   <H6>Barcelona</H6>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa fa-star"></i>
+                      <span class="list">5</span>
+                    </div>
+                      <div class="col-9">
+                      <span class="list"><strong>US $40</strong> noche</span>
+                    </div>
+                    <div class="col-3">
+                      
+                    </div>
+                  </div>
+                  <div class="main-button">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-3 col-sm-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="image">
+                  <img src="assets/images/deals-09.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-12 align-self-center">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-8">
+                   <H6>Barcelona</H6>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa fa-star"></i>
+                      <span class="list">5</span>
+                    </div>
+                      <div class="col-9">
+                      <span class="list"><strong>US $40</strong> noche</span>
+                    </div>
+                    <div class="col-3">
+                      
+                    </div>
+                  </div>
+                  <div class="main-button">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-3 col-sm-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="image">
+                  <img src="assets/images/deals-10.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-12 align-self-center">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-8">
+                   <H6>Barcelona</H6>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa fa-star"></i>
+                      <span class="list">5</span>
+                    </div>
+                      <div class="col-9">
+                      <span class="list"><strong>US $40</strong> noche</span>
+                    </div>
+                    <div class="col-3">
+                      
+                    </div>
+                  </div>
+                  <div class="main-button">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-3 col-sm-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="image">
+                  <img src="assets/images/deals-11.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-12 align-self-center">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-8">
+                   <H6>Barcelona</H6>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa fa-star"></i>
+                      <span class="list">5</span>
+                    </div>
+                      <div class="col-9">
+                      <span class="list"><strong>US $40</strong> noche</span>
+                    </div>
+                    <div class="col-3">
+                      
+                    </div>
+                  </div>
+                  <div class="main-button">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-3 col-sm-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="image">
+                  <img src="assets/images/deals-12.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-12 align-self-center">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-8">
+                   <H6>Barcelona</H6>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa fa-star"></i>
+                      <span class="list">5</span>
+                    </div>
+                      <div class="col-9">
+                      <span class="list"><strong>US $40</strong> noche</span>
+                    </div>
+                    <div class="col-3">
+                      
+                    </div>
+                  </div>
+                  <div class="main-button">
                   </div>
                 </div>
               </div>
@@ -272,13 +570,14 @@ https://templatemo.com/tm-580-woox-travel
           <ul class="page-numbers">
             <li><a href="#"><i class="fa fa-arrow-left"></i></a></li>
             <li><a href="#">1</a></li>
-            <li class="active"><a href="#">2</a></li>
+            <li class="active"><a href="#">1</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#"><i class="fa fa-arrow-right"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
+ </div>
   </div>
   <hr>
   
@@ -286,12 +585,27 @@ https://templatemo.com/tm-580-woox-travel
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">WoOx Travel</a> Company. All rights reserved. 
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
+          <p>Ⓒ 2023 StayNest. Todos los derechos reservados.</p>
         </div>
       </div>
     </div>
   </footer>
+     <script>
+        function togglePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = (popup.style.display === "none" || popup.style.display === "") ? "flex" : "none";
+        }
+    </script>
+
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+    </script>
 
 
   <!-- Scripts -->
