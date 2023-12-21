@@ -1,14 +1,17 @@
 # StayNest
 
-_Un espacio para registrar y reservar propiedades_
+_Es una plataforma de alojamiento en línea que conecta a viajeros con anfitriones que ofrecen alojamientos únicos. Permite buscar, reservar y dejar reseñas, promoviendo experiencias de hospedaje personalizadas en todo el mundo._
 
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+## Diseño
+_Para el estudio UX se evaluó un portal de alojamiento en línea, utilizando Airbnb como referencia principal. El análisis abarcó la navegación, diseño de búsqueda, proceso de reserva y retroalimentación de los usuarios. Los hallazgos del benchmark sirvieron como guía valiosa para identificar áreas de mejora y optimización, brindando una visión integral para perfeccionar la experiencia del usuario en la plataforma analizada.
 
-https://s12-19-tn-abnb.onrender.com/swagger/
+_En el proceso de estudio UI, se llevaron a cabo wireframes de alta fidelidad en Figma, para la plataforma de alojamiento, tomando inspiración de la estética de otras web. El diseño se centró en interfaces intuitivas, elementos visuales atractivos y una paleta de colores armoniosa.
+
+https://www.figma.com/proto/xYrxwbCB0qJjxH7gOxSBSg/AIRBNB?type=design&node-id=1-754&t=LPaLV896jGglp2Ai-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A754
 
 ### Pre-requisitos 📋
 
@@ -35,30 +38,19 @@ pytz==2023.3.post1
 sqlparse==0.4.4
 tzdata==2023.3_
 
+Mira **Deployment** para conocer como desplegar el proyecto.
 
-## Ejecutando las pruebas ⚙️
+https://s12-19-tn-abnb.onrender.com/swagger/
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+## Información de las pruebas ⚙️
 
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
+_Desde el área de Testing orientó su enfoque a la verificación de la apariencia y funcionalidad de la interfaz de usuario, incluyendo la búsqueda, visualización de listados y proceso de reserva._
+_Así mismo  la navegación para asegurar que los usuarios puedan moverse fácilmente entre las páginas y categorias, y que los elementos de la interfaz se desplegasen correctamente._
+_Se validó la consistencia del diseño, colores, tipografía y disposición de los elementos en diferentes dispositivos y tamaños de pantalla._
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+_Se verificó la apariencia y la funcionalidad de la interfaz de usuario_
 
 ## Construido con 🛠️
 
