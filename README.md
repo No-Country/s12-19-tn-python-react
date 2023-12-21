@@ -1,7 +1,6 @@
-<div align="center">
 ![logo](https://github.com/No-Country/s12-19-tn-python-react/assets/130188881/ca2cb5d1-2feb-426f-aad0-0dddbad639ab)
 
-
+<div align="center">
 
 <h1>StayNest</h1>
 </div>
