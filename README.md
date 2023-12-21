@@ -56,7 +56,7 @@ Estandares de Calidad Sugeridos._
 
 Ingrese al Siguiente link par revision de Documentacion.-
 
-[Documentacion]https://drive.google.com/drive/folders/1QEo4Z1jrdk4q4NLiN-ukgAg5lYpXFvQh?usp=sharing 
+https://drive.google.com/drive/folders/1QEo4Z1jrdk4q4NLiN-ukgAg5lYpXFvQh?usp=sharing 
 ## Despliegue 📦
 
 _Se verificó la apariencia y la funcionalidad de la interfaz de usuario_
