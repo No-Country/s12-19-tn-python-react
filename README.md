@@ -1,7 +1,11 @@
+<div align="center">
+![logo](https://github.com/No-Country/s12-19-tn-python-react/assets/130188881/ca2cb5d1-2feb-426f-aad0-0dddbad639ab)
 
-[Documentacion]![logo](https://github.com/No-Country/s12-19-tn-python-react/assets/130188881/ca2cb5d1-2feb-426f-aad0-0dddbad639ab)
 
-# StayNest
+
+<h1>StayNest</h1>
+</div>
+
 
 _Es una plataforma de alojamiento en línea que conecta a viajeros con anfitriones que ofrecen alojamientos únicos. Permite buscar, reservar y dejar reseñas, promoviendo experiencias de hospedaje personalizadas en todo el mundo._
 
