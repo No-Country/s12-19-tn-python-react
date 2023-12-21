@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section id="section-1">
+    <div class="content-slider">
+      <input type="radio" id="banner2" class="sec-1-input" name="banner" checked>
+      <div class="slider">
+        <div id="top-banner-2" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="  ">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info" style="margin-top: 200px;">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-user"></i>
+                        <h4>100k Personas</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4>20k Viajes</h4>
+                      </div>
+                      <div class="col-lg-2 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4> 5k Propiedad</h4>
+                      </div>
+                      <div class="col-lg-2 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4>50k Reservas</h4>
+                      </div>
+                      <div class="col-lg-2 col-sm-6 col-6">
+                        <div class="main-button">
+                          <a href="{% url 'index_propiedad' %}">Explore More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+  <hr>
+  <hr>
+  <div class="cities-town">
+    <div class="container">
+      <div class="row">
+        <div class="slider-content">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>Caribbean’s <em>Cities &amp; Towns</em></h2>
+            </div>
+            <div class="col-lg-12">
+              <div class="owl-cites-town owl-carousel">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/cities-01.jpg" alt="">
+                    <h4>Havana</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/cities-02.jpg" alt="">
+                    <h4>Kingston</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/cities-03.jpg" alt="">
+                    <h4>George Town</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/cities-04.jpg" alt="">
+                    <h4>Santo Domingo</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/cities-01.jpg" alt="">
+                    <h4>Havana</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/cities-02.jpg" alt="">
+                    <h4>Kingston</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/cities-03.jpg" alt="">
+                    <h4>George Town</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/cities-04.jpg" alt="">
+                    <h4>Santo Domingo</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock content %}

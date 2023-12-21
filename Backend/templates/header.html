@@ -1,0 +1,28 @@
+{% load static %}
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="{% static 'assets/images/logo.jpg' %}" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="propiedad" class="active">Propiedades</a></li>
+                        <li><a href="usd.html">USD($)</a></li>
+                        <li><a href="iniciar-sesion.html">Ingresa tu propiedad</a></li>
+                        <li><a href="{% url 'login_usuario' %}">Inicia sesión</a></li>
+                        <li><a href="{% url 'create_usuario' %}">Regístrate</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>

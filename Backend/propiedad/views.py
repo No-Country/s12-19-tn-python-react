@@ -4,6 +4,7 @@ from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
+from drf_yasg.utils import swagger_auto_schema
 from .models import Propiedad
 from .serializers import PropiedadSerializers
 
@@ -23,6 +24,12 @@ def detail_propiedad(request, id):
     serializer = PropiedadSerializers(propiedad)
     return Response(serializer.data)
 
+
+@swagger_auto_schema(
+    method='post',
+    request_body= PropiedadSerializers,  
+    operation_description="Crear una nueva propiedad"
+)
 @api_view(['POST'])
 def create_propiedad(request):
     serializer = PropiedadSerializers(data=request.data)

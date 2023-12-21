@@ -4,10 +4,15 @@ from .models import Comentario
 from usuario.serializers import UserSerializer
 from propiedad.serializers import PropiedadSerializers
 
-class ComentarioSerializers(serializers.Serializer):
+class ComentarioSerializers(serializers.ModelSerializer):
 
-    user = UserSerializer()
-    propiedad = PropiedadSerializers()
     class Meta:
         model = Comentario
-        fields = ['calificacion','comentario','fecha_creacion','user','propiedad']
+        fields = ['calificacion','comentario','user_id','propiedad_id']
+
+
+class ComentarioUpdateSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = Comentario
+        fields = ['calificacion', 'comentario']
+

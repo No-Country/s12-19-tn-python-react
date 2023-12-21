@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+fecha_inicio = models.DateField(null=True)
+fecha_fin = models.DateField(null=True)
+user = models.ForeignKey(User,on_delete=models.CASCADE,default=1)
+propiedad = models.ForeignKey(Propiedad, on_delete=models.CASCADE,null=True)
+costo_total = models.DecimalField(max_digits=10, decimal_places=2,default=0.0)
+
+<div class="reservation-form">
+    <div class="col-lg-12">
+        <form id="reservation-form" name="gs" method="submit" role="search" action="#">
+          <div class="row">
+            <div class="col-lg-12">
+              <h4>Registra su Reserva</h4>
+            </div>
+            <div class="col-lg-6">
+                <div class="col-lg-6">
+                    <fieldset>
+                        <label for="fecha_inicio" class="form-label">Check In</label>
+                        <input type="date" name="fecha_inicio" class="fecha_inicio" required>
+                    </fieldset>
+                  </div>
+            </div>
+
+          
+
+            <div class="col-lg-6">
+                <div class="col-lg-6">
+                    <fieldset>
+                        <label for="fecha_fin" class="form-label">Check Out</label>
+                        <input type="date" name="fecha_fin" class="fecha_fin" required>
+                    </fieldset>
+                  </div>
+            </div>
+
+            <div class="col-lg-6">
+                <fieldset>
+                    <label for="costo_total" class="form-label">Costo_total</label>
+                    <input type="number" name="costo_total" class="costo_total"  autocomplete="on" required>
+                </fieldset>
+            </div>
+
+           
+            <div class="col-lg-12">                        
+                <fieldset>
+                    <button class="main-button">Registrar</button>
+                </fieldset>
+            </div>
+          </div>
+        </form>
+      </div>
+</div>
+
+{% endblock content %}

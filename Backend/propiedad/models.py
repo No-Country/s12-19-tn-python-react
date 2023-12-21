@@ -1,4 +1,5 @@
 from django.db import models
+from servicios.models import Servicio
 
 from django.contrib.auth.models import User
 # Create your models here.
@@ -13,3 +14,4 @@ class Propiedad (models.Model):
     capacidad = models.IntegerField(default=0,null=True)
     tarifa = models.DecimalField(max_digits=10, decimal_places=2,null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
+    servicios = models.ManyToManyField(Servicio)
