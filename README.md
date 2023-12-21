@@ -1,3 +1,4 @@
+<div align="center">
 [Documentacion]![logo](https://github.com/No-Country/s12-19-tn-python-react/assets/130188881/ca2cb5d1-2feb-426f-aad0-0dddbad639ab)
 
 # StayNest
