@@ -15,7 +15,11 @@ _Para el estudio UX se evaluó un portal de alojamiento en línea, utilizando Ai
 
 _En el proceso de estudio UI, se llevaron a cabo wireframes de alta fidelidad en Figma, para la plataforma de alojamiento, tomando inspiración de la estética de otras web. El diseño se centró en interfaces intuitivas, elementos visuales atractivos y una paleta de colores armoniosa.
 
+Para ver Prototipo Figma:
 https://www.figma.com/proto/xYrxwbCB0qJjxH7gOxSBSg/AIRBNB?type=design&node-id=1-754&t=LPaLV896jGglp2Ai-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A754
+
+Para ver Documento Completo UX/UI:
+https://www.anapinamore.cl/staynest/documentos/UXUI-anapino.pdf
 
 ### Pre-requisitos 📋
 
