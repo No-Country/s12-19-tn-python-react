@@ -51,7 +51,8 @@ _En Definitiva, participar activamente en la construcción de un producto que cu
 Estandares de Calidad Sugeridos._
 
 Ingrese al Siguiente link par revision de Documentacion.-
-https://drive.google.com/drive/folders/1QEo4Z1jrdk4q4NLiN-ukgAg5lYpXFvQh?usp=sharing pantalla._
+
+https://drive.google.com/drive/folders/1QEo4Z1jrdk4q4NLiN-ukgAg5lYpXFvQh?usp=sharing 
 ## Despliegue 📦
 
 _Se verificó la apariencia y la funcionalidad de la interfaz de usuario_
